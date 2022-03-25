@@ -24,6 +24,10 @@ class Student:
         return f"{self._first_name.lower()}.{self._last_name.lower()}@email.com"
 
 
+    def apply_extension(self, days):
+        self.end_date = self.end_date + timedelta(days=days)
+
+
 if __name__ == "__main__":
     student1 = Student("Grant", "Wilsmore")
     print(student1.full_name)
